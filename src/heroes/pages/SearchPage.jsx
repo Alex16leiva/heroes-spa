@@ -12,7 +12,7 @@ export const SearchPage = () => {
   const location = useLocation();
 
   const { q = '' } = queryString.parse( location.search );
-  const heros = getHeroByName( q );
+  const heroes = getHeroByName( q );
 
   const { searchText, onInputChange } = useForm({ searchText: q });
 
@@ -57,10 +57,10 @@ export const SearchPage = () => {
             ( q === "" )
             ? 
               <div className="alert alert-primary animate__animated animate__fadeIn" style={{opacity: 40}}>Search a hero</div>
-              : ( heros.length === 0 ) && <div className="alert alert-danger animate__animated animate__fadeIn">No hero with <b>{q}</b></div>
+              : ( heroes.length === 0 ) && <div className="alert alert-danger animate__animated animate__fadeIn">No hero with <b>{q}</b></div>
           }
           {
-            heros.map(hero => {
+            heroes.map(hero => {
               return <HeroCard key={hero.id} {...hero} />
             })
           }
