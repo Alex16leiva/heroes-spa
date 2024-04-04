@@ -20,7 +20,7 @@ export const Navbar = () => {
             >
                 Asociaciones
             </Link>
-            {/* (args) => {return `nav-link ${ args.isActive ? 'active' : '' } */}
+
             <div className="navbar-collapse">
                 <div className="navbar-nav">
 
