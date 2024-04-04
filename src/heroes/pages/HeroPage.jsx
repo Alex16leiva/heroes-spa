@@ -44,7 +44,7 @@ export const HeroPage = () => {
           className="btn btn-outline-info"
           onClick={onReturn}
         >
-          Regresar
+          Return
         </button>
 
       </div>

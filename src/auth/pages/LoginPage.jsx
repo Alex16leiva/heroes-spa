@@ -9,7 +9,7 @@ export const LoginPage = () => {
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
 
-  const {username, password, onInputChange, onResetForm} = useForm({ username: '', password: '' });
+  const {username, password, onInputChange, onResetForm} = useForm({ username: 'CaptainAmerica', password: 'superPassword' });
 
   const handleLogin = () => {
     if (!username) return  toast.warning('Please enter a valid username');
